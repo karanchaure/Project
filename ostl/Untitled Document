@@ -1,0 +1,22 @@
+def s2b (s):
+	a=[]
+	b=[]
+	for i in s :
+		val=ord(i)
+		
+		while val>0:
+			if val%2==0 :
+				a.append(0)
+			else :
+				a.append(1)
+			val=val/2	
+		a.reverse()
+		#print a
+		b.append(a[0:7])			
+				
+	print b
+	print "\t\t",
+	print s 
+Str=raw_input("enter the string")
+s2b(Str	)
+ 
